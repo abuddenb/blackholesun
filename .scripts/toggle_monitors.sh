@@ -36,7 +36,12 @@ next_mode=${mode_tuple[2]}
 echo "${next_mode}" > /tmp/monitor_mode
 
 load_mode_tuple $next_mode
-set_mode
-notify-send "Monitor mode: $next_mode"
+
+if [[ "$next_mode" = 'internal' && `cat /proc/acpi/button/lid/LID/state` =~ closed ]]; then
+    notify-send "Skipping internal mode while lid is closed"
+else
+    set_mode
+    notify-send "Monitor mode: $next_mode"
+fi
 
 
