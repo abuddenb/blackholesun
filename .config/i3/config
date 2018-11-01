@@ -31,6 +31,9 @@ exec --no-startup-id feh --bg-fill ~/.config/47tuc_illus.jpg
 # Notifications daemon
 exec --no-startup-id dunst
 
+# Compositor for pretty graphics
+exec --no-startup-id compton
+
 # Toggle through monitor modes
 bindsym $mod+m exec --no-startup-id ~/.scripts/toggle_monitors.sh 
 
