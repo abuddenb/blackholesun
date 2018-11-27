@@ -20,6 +20,5 @@ alias less='less -r'
 # alias vi='nvim'
 # alias vim='nvim'
 
-export TERMINAL=st
-
+# Fix delete key in bash / st
 tput smkx

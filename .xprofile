@@ -3,3 +3,5 @@
 if (systemctl is-enabled autorandr.service); then
     /usr/bin/autorandr --load external --default internal
 fi
+
+export TERMINAL=st
