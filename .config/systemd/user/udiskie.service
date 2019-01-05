@@ -1,0 +1,11 @@
+[Unit]
+Description=Removable disk automounter using udisks
+After=local-fs.target
+
+[Service]
+ExecStart=/usr/bin/udiskie
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
