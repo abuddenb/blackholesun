@@ -3,7 +3,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -32,7 +32,7 @@ exec --no-startup-id feh --bg-fill ~/.config/47tuc_illus.jpg
 exec --no-startup-id dunst
 
 # Compositor for pretty graphics
-exec --no-startup-id compton
+exec --no-startup-id compton -b --backend glx --vsync opengl-swc 
 
 # Toggle through monitor modes
 bindsym $mod+m exec --no-startup-id ~/.scripts/toggle_monitors.sh 
