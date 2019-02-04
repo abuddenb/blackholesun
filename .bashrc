@@ -6,12 +6,12 @@
 [[ $- != *i* ]] && return
 
 function _update_ps1() {
-    PS1="$(/usr/local/bin/powerline-go -error $?)"
+    PS1="$(/usr/bin/powerline-go -error $?)"
 }
 
 PS1='[\u@\h \W]\$ '
 
-if [ "$TERM" != "linux" ] && [ -f "/usr/local/bin/powerline-go" ]; then
+if [ "$TERM" != "linux" ] && [ -f "/usr/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
