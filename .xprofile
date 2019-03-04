@@ -5,3 +5,4 @@ if (systemctl is-enabled autorandr.service); then
 fi
 
 export TERMINAL=st
+export PATH=$PATH:~/.config/polybar/scripts

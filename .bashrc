@@ -23,4 +23,3 @@ alias less='less -r'
 # Fix delete key in bash / st
 tput smkx
 
-export PATH=$PATH:~/.config/polybar/scripts
