@@ -3,7 +3,7 @@ Description=Synergy Client Daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/synergyc --no-daemon silmaria.lan
+ExecStart=/usr/bin/synergyc --enable-crypto --no-daemon silmaria.lan
 Restart=always
 RestartSec=3
 
