@@ -36,6 +36,9 @@ exec --no-startup-id compton -b --backend glx --vsync
 # Polybar
 exec --no-startup-id polybar main 
 
+# Start removable media automounter
+exec --no-startup-id /usr/bin/udiskie 
+
 # Start some programs
 exec --no-startup-id st bash -c "neofetch; bash"
 
